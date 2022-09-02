@@ -4,9 +4,9 @@
 
 }
 
+/*Section 1*/
 .bg-img{
     width: 100%;
-    opacity: ;
 }
 
 .nav {
@@ -39,8 +39,8 @@
     background-color: transparent;
 }
 
-
-.red a {
+/*Login button*/
+.red a { 
     background-color: white;
     color: rgb(82, 120, 200);
     font-family: 'Roboto Condensed', sans-serif;
@@ -58,10 +58,4 @@
 
 .red {
     background-color: transparent;
-}
-
-.split {
-    border: 1px;
-    width: 100%;
-    color: black;
 }

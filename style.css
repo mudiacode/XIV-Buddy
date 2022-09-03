@@ -139,7 +139,7 @@ a {
     font-family: 'mied', Helvetica, sans-serif;
     font-size: 20px;
     margin-left: 0;
-    margin-right: 365px;
+    margin-right: 280px;
     background-color: transparent;
     color: white;
 }
@@ -151,4 +151,20 @@ a {
 .potential {
     color: rgb(242, 91, 91);
     background-color: transparent;
+}
+
+
+/*Section 2*/
+
+.section2 {
+    height: 16vh;
+    background: red;
+}
+
+.grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    
 }

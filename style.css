@@ -4,6 +4,17 @@
 
 }
 
+
+@font-face {
+    font-family: 'mied';
+    src: url(Miedinger\ W01\ Bold.ttf) format('embedded-opentype'), /* Internet Explorer */
+         url(Miedinger\ W01\ Bold.ttf) format('woff2'),             /* Super Modern Browsers */
+         url(Miedinger\ W01\ Bold.ttf) format('woff'),              /* Pretty Modern Browsers */
+         url(Miedinger\ W01\ Bold.ttf) format('truetype'),          /* Safari, Android, iOS */
+         url(Miedinger\ W01\ Bold.ttf) format('svg');               /* Legacy iOS */
+}
+
+
 /*Section 1*/
 .bg-img{
     max-width: 100%;
@@ -20,7 +31,7 @@ a {
     display: inline-block;
 }
 
-.bg-container h1 {
+.bg-container h1 { /*Cover image text*/
     background-color: transparent;
     color: white;
     position: absolute;
@@ -28,7 +39,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-family: 'Anek Telugu', sans-serif;
+    font-family: 'mied', Helvetica, sans-serif;
     font-size: 400%;
 
     opacity: 1;
@@ -75,6 +86,7 @@ a {
     text-transform: uppercase;
     margin-right: 20px;
     background-color: transparent;
+
 }
 
 
@@ -95,5 +107,19 @@ a {
 }
 
 .red {
+    background-color: transparent;
+}
+
+.nav h1 { /*logo text*/
+    font-family: 'mied', Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 365px;
+    background-color: transparent;
+    color: white;
+}
+
+.potential {
+    color: rgb(242, 91, 91);
     background-color: transparent;
 }

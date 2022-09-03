@@ -66,6 +66,7 @@ a {
     width: 100vw;
     z-index: 999;
     background-color: transparent;
+    /**border-bottom: 1px solid #BBBBBB;**/ /*Line under navbar*/
 }
 
 .nav-links {
@@ -89,6 +90,30 @@ a {
 
 }
 
+/*Underline navbar link animations*/
+.nav-links li {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+}
+  
+.nav-links li:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -1.5px;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.nav-links li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
 .red a { /*Login button*/
     background-color: white;
@@ -117,6 +142,10 @@ a {
     margin-right: 365px;
     background-color: transparent;
     color: white;
+}
+
+#logo-text {
+    text-decoration: none;
 }
 
 .potential {

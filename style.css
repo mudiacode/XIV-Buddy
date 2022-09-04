@@ -124,7 +124,8 @@ a {
     margin-right: 30px;
 }
 .nav img {
-    width: 50px;
+    bottom: 10px;
+    width: 200px;
     margin: 20px;
     background-color: transparent;
     
@@ -135,36 +136,35 @@ a {
     background-color: transparent;
 }
 
-.nav h1 { /*logo text*/
-    font-family: 'mied', Helvetica, sans-serif;
-    font-size: 20px;
-    margin-left: 0;
-    margin-right: 280px;
-    background-color: transparent;
-    color: white;
-}
-
-#logo-text {
-    text-decoration: none;
-}
-
 .potential {
     color: rgb(242, 91, 91);
     background-color: transparent;
 }
 
-
 /*Section 2*/
 
 .section2 {
-    height: 16vh;
-    background: red;
+    margin: 50px 50px 0px auto;
 }
 
-.grid-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    
+.features {
+    font-size: xx-large;
+    margin: 0px 0px 50px 50px;
+    font-family: mied, Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid rgba(255,255,255,.25);
+    color: white;
+}
+
+.wrapper {
+    display: grid;
+    margin: 10px;
+    height: 10px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box {
+    text-align: center;
+    background-color: grey;
 }

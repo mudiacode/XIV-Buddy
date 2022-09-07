@@ -4,6 +4,10 @@
 
 }
 
+body {
+    overflow-x: hidden;
+}
+
 
 @font-face {
     font-family: 'mied';
@@ -307,7 +311,6 @@ a {
 
 .event-img img{
     display: block;
-    margin: 100px auto 100px auto;
     width: 50%;
     width: 600px;
     border-radius: 6px;
@@ -379,4 +382,27 @@ a {
     width: 41%;
     border-bottom: 2.5px solid white;
     opacity: 0.6;
+}
+
+.events {
+    display: flex;
+}
+
+.events img {
+    margin: 100px 100px 100px 100px;
+    border-radius: 15px;
+}
+
+
+.timer {
+    text-align: center;
+    color: white;
+    margin: 100px 0px 100px 150px;
+    align-self: center;
+    font-size: 25px;
+    white-space: nowrap;
+    font-family: mied, Arial, Helvetica, sans-serif;
+    background-color: rgb(59, 62, 74);
+    padding: 25px;
+    border-radius: 50px;
 }

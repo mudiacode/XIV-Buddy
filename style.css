@@ -68,7 +68,17 @@ a {
     width: 100vw;
     z-index: 999;
     background-color: transparent;
-    /**border-bottom: 1px solid #BBBBBB;**/ /*Line under navbar*/
+}
+
+.nav-other {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    z-index: 999;
+    background-color: transparent;
+    border-bottom: 1px solid #BBBBBB;
 }
 
 .nav-links {
@@ -93,16 +103,16 @@ a {
 }
 
 /*Underline navbar link animations*/
-.nav-links li {
+.underline-dungeons {
     display: inline-block;
     position: relative;
     color: #ffffff;
 }
 
-.nav-links li:after {
+.underline-dungeons:after {
     content: '';
     position: absolute;
-    width: 50%;
+    width: 78%;
     transform: scaleX(0);
     height: 3px;
     bottom: -1.5px;
@@ -112,10 +122,83 @@ a {
     transition: transform 0.25s ease-out;
 }
 
-.nav-links li:hover:after {
+.underline-dungeons:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+.underline-raids {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+}
+
+.underline-raids:after {
+    content: '';
+    position: absolute;
+    width: 66%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -1.5px;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline-raids:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.underline-trials {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+}
+
+.underline-trials:after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -1.5px;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline-trials:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.underline-checklist {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+}
+
+.underline-checklist:after {
+    content: '';
+    position: absolute;
+    width: 77%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -1.5px;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline-checklist:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 
 .red a { /*Login button*/
     background-color: white;
@@ -126,6 +209,15 @@ a {
     margin-right: 30px;
 }
 .nav img {
+    bottom: 10px;
+    width: 200px;
+    margin: 20px;
+    background-color: transparent;
+    
+    
+}
+
+.nav-other img {
     bottom: 10px;
     width: 200px;
     margin: 20px;
@@ -251,4 +343,40 @@ a {
     color: white;
     background-color: rgb(45, 49, 58);
     margin-bottom: 50px;
+}
+
+.dungeons-nav {
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px 25px;
+    width: 51%;
+    border-bottom: 2.5px solid white;
+    opacity: 0.6;
+}
+
+.checklist-nav {
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px 25px;
+    width: 51%;
+    border-bottom: 2.5px solid white;
+    opacity: 0.6;
+}
+
+.raids-nav {
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px 25px;
+    width: 36%;
+    border-bottom: 2.5px solid white;
+    opacity: 0.6;
+}
+
+.trials-nav {
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px 25px;
+    width: 41%;
+    border-bottom: 2.5px solid white;
+    opacity: 0.6;
 }

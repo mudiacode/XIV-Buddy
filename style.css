@@ -46,7 +46,8 @@ a {
     transform: translate(-50%, -50%);
     text-align: center;
     font-family: 'mied', Helvetica, sans-serif;
-    font-size: 400%;
+    font-size: 4vw; /*Use vw so text can scale with screen size*/
+    max-width: 100%;
 
     opacity: 1;
 	animation-name: fadeInOpacity;
@@ -215,10 +216,8 @@ a {
 .nav img {
     bottom: 10px;
     width: 200px;
-    margin: 20px;
+    margin: 20px 20px 20px 30px;
     background-color: transparent;
-    
-    
 }
 
 .nav-other img {
@@ -226,8 +225,6 @@ a {
     width: 200px;
     margin: 20px;
     background-color: transparent;
-    
-    
 }
 
 .red {
@@ -246,16 +243,18 @@ a {
 }
 
 .features {
-    font-size: xx-large;
+    font-size: 30px;
     margin: 0px 0px 50px 50px;
     font-family: mied, Arial, Helvetica, sans-serif;
     border-bottom: 1px solid rgba(251, 251, 251, 0.25);
     color: white;
+    max-width: 100%;
 }
 
 .wrapper {
     display: grid;
-    margin: 0px 50px 50px 50px;
+    margin: 0vh 5vh 5vh 5vh;
+    max-width: 100%;
     height: 500px;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -279,8 +278,8 @@ a {
 
 .icon img {
     background-color: transparent;
-    width: 60px;
-    margin: 20px;
+    width: 10vh;
+    margin: 5vh;
 }
 
 .text {
@@ -308,14 +307,6 @@ a {
     
 }
 
-
-.event-img img{
-    display: block;
-    width: 50%;
-    width: 600px;
-    border-radius: 6px;
-}
-
 .footer-line {
     border-top: 1px solid rgb(255, 255, 255);
 }
@@ -330,6 +321,8 @@ a {
     align-items: center;
     align-content: space-between;
     background-color: rgb(45, 49, 58);
+    overflow-y: hidden;
+    max-width: 100%;
 }
 
 .logo-links {
@@ -385,24 +378,92 @@ a {
 }
 
 .events {
-    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 5vw;
 }
 
 .events img {
-    margin: 100px 100px 100px 100px;
     border-radius: 15px;
+    max-width: 100%;
+    width: 80vw;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
 }
 
+.event-img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 .timer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     color: white;
-    margin: 100px 0px 100px 150px;
+    max-width: 100%;
     align-self: center;
-    font-size: 25px;
     white-space: nowrap;
     font-family: mied, Arial, Helvetica, sans-serif;
-    background-color: rgb(59, 62, 74);
-    padding: 25px;
+    /*background-color: rgb(59, 62, 74);*/
+    padding: 3vw;
     border-radius: 50px;
+    font-size: 20px;
+}
+
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger{
+    display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 1100px){
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+        background-color: transparent;
+    }
+
+    .nav-links.open{
+        clip-path: circle(1100px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .red{
+        opacity: 0;
+    }
+}
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
 }

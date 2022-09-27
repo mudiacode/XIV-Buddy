@@ -1,6 +1,6 @@
 //Event Timer
 // Set the date we're counting down to
-var countDownDate = new Date("Sep 12, 2022 15:59:00").getTime();
+var countDownDate = new Date("Sep 30, 2022 08:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -16,7 +16,7 @@ var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-// Display the result in the element with id="demo"
+// Display the result in the element with id
 document.getElementById("event-timer").innerHTML = days + "d " + hours + "h "
 + minutes + "m ";
 

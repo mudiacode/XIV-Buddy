@@ -1,9 +1,11 @@
+/*default/everything*/
  * {
     margin: 0;
     background-color: rgb(35, 38, 46);
 
 }
 
+/*main body*/
 body {
     overflow-x: hidden;
 }
@@ -36,7 +38,9 @@ a {
     display: inline-block;
 }
 
-.bg-container h1 { /*Cover image text*/
+
+ /*Cover image text*/
+.bg-container h1 {
     background-color: transparent;
     color: white;
     position: absolute;
@@ -55,6 +59,8 @@ a {
 	animation-duration: 2s;
 }
 
+
+/*fade-in animation*/
 @keyframes fadeInOpacity {
 	0% {
 		opacity: 0;
@@ -64,6 +70,7 @@ a {
 	}
 }
 
+/*navigation bar*/
 .nav {
     display: flex;
     justify-content: space-between;

@@ -24,6 +24,6 @@ document.getElementById("event-timer").innerHTML = days + "d " + hours + "h "
 if (distance < 0) {
     clearInterval(x);
     document.getElementById("event-timer").innerHTML = "EXPIRED";
-}
+    }
 }, 1000);
 

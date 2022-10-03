@@ -92,6 +92,7 @@ a {
     border-bottom: 1px solid #BBBBBB;
 }
 
+/*navigation bar items */
 .nav-links {
     display: flex; 
     background-color: transparent;

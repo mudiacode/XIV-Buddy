@@ -1,6 +1,6 @@
 //Event Timer
 // Set the date we're counting down to
-var countDownDate = new Date("Sep 30, 2022 08:00:00").getTime();
+var countDownDate = new Date("Nov 1, 2022 07:59:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -27,4 +27,4 @@ if (distance < 0) {
     }
 }, 1000);
 
-//time calculation
+// Time calculator

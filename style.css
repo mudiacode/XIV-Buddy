@@ -258,6 +258,7 @@ a {
 }
 
 /*small screen size*/
+/*resize the screen resolution*/
 @media (min-width: 600px) {
     .wrapper { grid-template-columns: repeat(2, 1fr); }
 }
@@ -418,6 +419,7 @@ a {
     align-content: center;
 }
 
+/*timer presentation*/
 .timer {
     display: flex;
     justify-content: center;
@@ -459,3 +461,6 @@ a {
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
+
+
+/*update 1.2*/
